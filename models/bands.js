@@ -20,6 +20,12 @@ class Bands {
         return this.bands;
     }
 
+    resetBands(){
+        for(var item in this.bands){
+            item.votes = 0;
+        }
+    }
+
     voteBand( id = '' ) {
 
         this.bands = this.bands.map( band => {
