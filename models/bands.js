@@ -24,6 +24,7 @@ class Bands {
         for(var item in this.bands){
             item.votes = 0;
         }
+        return this.bands;
     }
 
     voteBand( id = '' ) {
